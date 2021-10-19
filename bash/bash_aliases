@@ -1,0 +1,6 @@
+# Générer des mots de passes aléatoires :
+alias generer_pwds="tr -cd '[:alnum:]' < /dev/urandom | fold -w30 | head -n 5"
+
+#alias pathlist=echo "${PATH//:/$'\n'}"
+alias pathlist='echo $PATH | tr ":" "\n"'
+
