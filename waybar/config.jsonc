@@ -71,7 +71,8 @@
     },
 
     "clock": {
-        "format": "{:%a, %d %b %Y - %I:%M %p}",
+        "format": "{:L%H:%M}",
+        "format-alt": "{:L%H:%M - %A, %d %b %Y}",
         "tooltip": false
     },
 
