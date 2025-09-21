@@ -13,7 +13,7 @@ sleep 0.5
 config_file="config.jsonc"
 style_file="style.css"
 
-if [ ! -f $HOME/.config/ml4w/settings/waybar-disabled ]; then
+if [ ! -f $HOME/.local/share/waybar/waybar-disabled ]; then
     HYPRLAND_SIGNATURE=$(hyprctl instances -j | jq -r '.[0].instance')
     #HYPRLAND_INSTANCE_SIGNATURE="$HYPRLAND_SIGNATURE" waybar -c ~/.config/waybar/themes${arrThemes[0]}/$config_file -s ~/.config/waybar/themes${arrThemes[1]}/$style_file &
     HYPRLAND_INSTANCE_SIGNATURE="$HYPRLAND_SIGNATURE" waybar -c ~/.config/waybar/$config_file -s ~/.config/waybar/$style_file &

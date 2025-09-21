@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
+if [ !-d $HOME/.local/share/waybar ]; then
+    mkdir $HOME/.local/share/waybar
+fi
 
-if [ -f $HOME/.config/waybar/waybar-disabled ]; then
-    rm $HOME/.config/waybar/waybar-disabled
+if [ -f $HOME/.local/share/waybar/waybar-disabled ]; then
+    rm $HOME/.local/share/waybar/waybar-disabled
 else
-    touch $HOME/.config/waybar/waybar-disabled
+    touch $HOME/.local/share/waybar/waybar-disabled
 fi
 killall -SIGUSR1 waybar
 #$HOME/.config/waybar/launch.sh &
