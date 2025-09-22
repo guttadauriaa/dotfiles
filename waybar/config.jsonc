@@ -52,7 +52,7 @@
 
     // 󱓼󱓻, 󰄶󰄷, 󰚕󰬸,_,
     "hyprland/workspaces": {
-        "format": " {icon} ",
+        "format": "{name} {icon} ",
         "cursor": 60, // gdk cursor type 60 -> pointer
         "disable-scroll": true,
         "tooltip": false,
@@ -62,11 +62,11 @@
                 "3": "",
                 "4": "",
                 "5": "",
-                "active": "",
+                "active": "󱓻",
                 "default": ""
         },
         "persistent-workspaces": {
-		"*": 3 
+		"*": 5 
         }
     },
 
