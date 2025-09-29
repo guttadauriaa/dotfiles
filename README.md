@@ -1,35 +1,25 @@
-# nvim-config-lua
+# dotfiles
 
-My NeoVim configuration in lua.
+My dotfiles for NeoVim 0.11.4 and Hyprland 0.51.
 
-Based on [the Primeagen](https://www.youtube.com/@ThePrimeagen)'s video. ([0 to LSP : Neovim RC From Scratch](https://www.youtube.com/watch?v=w7i4amO_zaE))
+Neovim config from [typecraft](https://www.youtube.com/@typecraft_dev)'s videos.
+
+* [From 0 to IDE in NEOVIM from scratch // EP 1](https://www.youtube.com/watch?v=zHTeCSVAFNY)
+* [A BEAUTIFUL neovim config with Lazy // EP 2](https://www.youtube.com/watch?v=4zyZ3sw_ulc)
+* [LSP in Neovim. // EP 3](https://www.youtube.com/watch?v=S-xzYgTLVJE)
 
 ## Setup
 
 
 ### NeoVim packages
 
-Requires at least NeoVim 0.9
+Requires at least NeoVim 0.11
 
-#### Installation on Fedora 37
-
-At the time of the creation of this repository, we need to install neovim from Fedora Updates Testing repository :
+#### Installation on Fedora 42
 
 ```
-sudo dnf --enablerepo=updates-testing install neovim python3-neovim
+sudo dnf install neovim python3-neovim
 ```
 
-### Cloning the configuration
-
-Go to your .config directory, clone the repository then load the packer.lua file.  
-When the file is open, source it, run PackerSync and reload nvim.
-
-```
-$ cd ~/.config
-$ git clone https://github.com/guttadauriaa/nvim-config-lua.git
-$ nvim ~/.config/nvim/lua/adriano/packer.lua
-:so
-:PackerSync
-:qa
-```
+Clone the repository and copy the files you want inside your $HOME/.config/ folder.
 
